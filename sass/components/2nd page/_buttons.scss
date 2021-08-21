@@ -1,6 +1,8 @@
 .dignity__content {
   padding-top: 95px;
   padding-bottom: 95px;
+
+  @extend %container;
 }
 
 .project-buttons {
@@ -8,7 +10,7 @@
   display: flex;
   justify-content: center;
 
-  @extend %container;
+  
 }
 
 .project-buttons__item + .project-buttons__item {
