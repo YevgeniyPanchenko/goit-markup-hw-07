@@ -1,0 +1,43 @@
+.footer__bg {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $dark-bg;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-test {
+  display: flex;
+  align-items: baseline;
+
+  @extend %container;
+}
+
+.footer__address {
+  display: inline-block;
+}
+
+.footer__location {
+  color: $white-color;
+  margin-top: 20px;
+}
+
+.footer-contact {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-contact__item {
+  margin-top: 10px;
+}
+
+.footer-social__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+
+
+
+

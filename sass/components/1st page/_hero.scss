@@ -1,0 +1,61 @@
+//container???
+
+.hero__background {
+  width: 1600px;
+  background-color: $dark-bg;
+  margin: auto;
+}
+
+.hero__overley {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/img.studio/hero.jpeg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero__title {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+
+  color: $white-color;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  // @extend %container;
+}
+.hero__button {
+  color: $white-color;
+  background-color: $main-color;
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+  &:hover, :focus {
+      background-color: $white-color;
+    }
+
+  @extend %link;
+
+   
+}

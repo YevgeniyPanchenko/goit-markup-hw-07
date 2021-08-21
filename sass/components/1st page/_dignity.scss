@@ -1,0 +1,39 @@
+.dignity__content {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  @extend %container;
+}
+.dignity-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.dignity__bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.dignity__features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.dignity__subtitle {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $grey-color;
+}
+.dignity-list__item {
+  width: 270px;
+}
+.dignity-list__item + .dignity-list__item {
+  margin-left: 30px;
+}

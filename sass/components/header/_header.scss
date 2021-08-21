@@ -1,0 +1,19 @@
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+@extend %container ;
+}
+
+.header__border {
+  border: 1px solid #ececec;
+  
+}
