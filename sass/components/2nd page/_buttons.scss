@@ -2,7 +2,7 @@
   padding-top: 95px;
   padding-bottom: 95px;
 
-  @extend %container;
+  @extend %container;  
 }
 
 .project-buttons {
@@ -10,7 +10,6 @@
   display: flex;
   justify-content: center;
 
-  
 }
 
 .project-buttons__item + .project-buttons__item {
