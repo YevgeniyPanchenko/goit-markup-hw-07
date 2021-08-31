@@ -11,6 +11,9 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   margin: 0;
+  &.modal-open {
+overflow: hidden;
+  }
 }
 h1,
 h2,

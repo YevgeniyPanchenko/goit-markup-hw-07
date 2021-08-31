@@ -1,19 +1,37 @@
 .dignity__content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  //@extend %container;  
+
+  @media screen and (min: width 1140px) {
   padding-top: 95px;
   padding-bottom: 95px;
+  }
+}
 
-  @extend %container;  
+.cont {
+  @extend %container; 
 }
 
 .project-buttons {
   list-style: none;
+
+  @media screen and (min-width: 481px) {
   display: flex;
   justify-content: center;
-//@extend bnm bbb uuu
+    }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
-.project-buttons__item + .project-buttons__item {
+.project-buttons__item { //+ .project-buttons__item {
   margin-left: 10px;
+  margin-bottom: 15px;
 }
 
 .project-buttons__title {

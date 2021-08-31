@@ -1,6 +1,12 @@
 .programing {
+  display: none;
   padding-bottom: 95px;
   @extend %container;
+
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
+
   }
 .programing-list {
   list-style: none;
@@ -41,7 +47,13 @@
 
 .headline {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+
+  @media screen and (min-width:1200px) {
+  max-width:1200px;
+  
+  font-size: 36px;
+  }
 }

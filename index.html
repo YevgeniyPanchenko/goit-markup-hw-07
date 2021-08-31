@@ -21,46 +21,119 @@
 
     <body>
             <!-- шапка сайта -->
-            <header>   
+            <header class="header__border">
                 <div class="container">
                     <div class="main-nav">
-                        <a class="main-logo" href="">Web<span class="main-logo__header">Studio</span></a>
-                                <nav>
-                                    <ul class="nav-list">
-                                        <li class="nav-list__item">
-                                            <a class="nav-list__header-link nav-list__header-link--underline" href="">Студия</a>
-                                        </li>
-                                        <li class="nav-list__item">
-                                            <a class="nav-list__header-link" href="./portfolio.html">Портфолио</a>
-                                        </li>
-                                        <li class="nav-list__item">
-                                            <a class="nav-list__header-link" href="">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                    <ul class="auth-nav">
-                                        <li class="auth-nav__item">
-                                          
-                                                <a class="auth-nav__header-contact auth-nav__header-contact--center" href="mailto:info@example.com">
-                                                    <svg class="auth-nav__icon" width="16" height="12">
-                                                        <use href="./img/svg/1 symbol-defs.svg#icon-mail">
-                                                        </use>
-                                                    </svg>info@example.com</a>
-                                            
-                                        </li>
-                                        <li class="auth-nav__item">
-                                            
-                                                <a class="auth-nav__header-contact" href="tel:+380991111111">
-                                                    <svg class="auth-nav__icon" width="10" height="16">
-                                                        <use href="./img/svg/1 symbol-defs.svg#icon-smartphone">
-                                                        </use>
-                                                    </svg>+380991111111</a>
-                                            
-                                        </li>
-                                    </ul>
-                    </div> 
-                </div>     
-        </header>
+            
+                        <div class="header-nav">
+                            <a class="main-logo" href="">Web<span class="main-logo__header">Studio</span>
+                            </a>
+                            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
+                                aria-controls="mobile-menu">
+            
+                                <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                                    <use class="menu-toggle__icon" href="./img/svg/1 symbol-defs.svg#icon-menu_40"></use>
+                                    <!-- <use class="cross__icon" href="./img/svg/1 symbol-defs.svg#icon-close_40"></use> -->
+                                </svg>
+                            </button>
+                        </div>
+            
+                        <nav>
+                            <ul class="nav-list__menu">
+                                <li class="nav-list__item">
+                                    <a class="nav-list__header-link nav-list__header-link--underline">Студия</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__header-link" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a class="nav-list__header-link" href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="auth-nav__menu">
+                            <li class="auth-nav__item">
+            
+                                <a class="auth-nav__header-contact auth-nav__header-contact--center" href="mailto:info@example.com">
+                                    <svg class="auth-nav__icon" width="16" height="12">
+                                        <use href="./img/svg/1 symbol-defs.svg#icon-mail">
+                                        </use>
+                                    </svg>info@example.com</a>
+            
+                            </li>
+                            <li class="auth-nav__item">
+            
+                                <a class="auth-nav__header-contact" href="tel:+380991111111">
+                                    <svg class="auth-nav__icon" width="10" height="16">
+                                        <use href="./img/svg/1 symbol-defs.svg#icon-smartphone">
+                                        </use>
+                                    </svg>+380991111111</a>
+            
+                            </li>
+                        </ul>
+                        <div class="menu-container js-menu-container" id="mobile-menu">
+                            <button class="menu-toggle js-close-menu">
+                                <svg width="40" height="40">
+                                    <use class="cross__icon" href="./img/svg/1 symbol-defs.svg#icon-close_40"></use>
+                                </svg>
+                            </button>
+            
+                            <nav>
+                                <ul class="nav-list__mobile-menu">
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__header-link nav-list__header-link--underline">Студия</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__header-link" href="./portfolio.html">Портфолио</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a class="nav-list__header-link" href="">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="auth-nav__mobile-menu">
+                                <li class="auth-nav__item">
+            
+                                    <a class="auth-nav__header-contact auth-nav__header-contact--center"
+                                        href="mailto:info@example.com">
+                                        <svg class="auth-nav__icon" width="16" height="12">
+                                            <use href="./img/svg/1 symbol-defs.svg#icon-mail">
+                                            </use>
+                                        </svg>info@example.com</a>
+            
+                                </li>
+                                <li class="auth-nav__item">
+            
+                                    <a class="auth-nav__header-contact" href="tel:+380991111111">
+                                        <svg class="auth-nav__icon" width="10" height="16">
+                                            <use href="./img/svg/1 symbol-defs.svg#icon-smartphone">
+                                            </use>
+                                        </svg>+380991111111</a>
+            
+                                </li>
+                            </ul>
+                            <ul class="soc-list__mobile-menu">
+                                <li class="soc-list__item">
+                                    <a href="">Instagram</a>
+                                </li>
+                                <li class="soc-list__item">
+                                    <a href="">Twitter</a>
+                                </li>
+                                <li class="soc-list__item">
+                                    <a href="">Facebook</a>
+                                </li>
+                                <li class="soc-list__item">
+                                    <a href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+            
+            
+                    </div>
+            
+                </div>
+            </header>
         
         <main>
             <!-- hero -->
@@ -136,7 +209,10 @@
                         <h2 class="headline">Чем мы занимаемся</h2>
                         <ul class="programing-list">
                             <li class="programing-list__item">
-                                <img src="./img/img.studio/pc.jpeg" 
+                                <img srcset="./img/@/desktop-1x.jpeg 1x, 
+                                             ./img/@/desktop-2x.jpeg 2x, 
+                                             ./img/@/desktop-3x.jpeg 3x"
+                                     src="./img/img.studio/pc.jpeg" 
                                      alt="адаптация под пк" 
                                      width="370">
                                 
@@ -146,7 +222,10 @@
                                 
                             </li>
                             <li class="programing-list__item">
-                                <img src="./img/img.studio/mobile.jpeg" 
+                                <img srcset="./img/@/mobile-1x.jpeg 1x, 
+                                             ./img/@/mobile-2x.jpeg 2x,
+                                             ./img/@/mobile-3x.jpeg 3x"
+                                     src="./img/img.studio/mobile.jpeg" 
                                      alt="адаптация под мобильный телефон" 
                                      width="370">
                                      <div class="programing-discription__bg">
@@ -154,7 +233,9 @@
                                      </div>
                             </li>
                             <li class="programing-list__item">
-                                <img src="./img/img.studio/tablet.jpeg" 
+                                <img srcset="./img/@/tab-1x.jpeg 1x, 
+                            ./img/@/tab-2x.jpeg 2x"
+                                     src="./img/img.studio/tablet.jpeg" 
                                      alt="адаптация под планшет" 
                                      width="370">
                                      <div class="programing-discription__bg">
@@ -167,13 +248,18 @@
             </section>
             <!-- Наша команда -->
             <section class="team__backround">
-                <div class="container">
+                <div class="cont">
                     <h2 class="headline">Наша команда</h2>
                         <ul class="team-list">
                             <li class="team-list__item">
-                                <img src="./img/img.studio/productdesigner.jpeg" 
-                                     alt="дизайнер" 
-                                     width="270">
+                                <img srcset="./img/@/Igor-x2.jpeg  540w, 
+                                             ./img/@/Igor-x3.jpeg  810w,
+                                             ./img/@/Igor-x4.jpeg 1080w"
+                                     src="./img/img.studio/productdesigner.jpeg" 
+                                     alt="дизайнер"
+                                     sizes="(min-width: 1200px) 20vw,
+                                            (min-width: 768px) 50vw,
+                                            (min-width: 320px) 100vw, 100vw"/>
                                 <div class="team__subtitle--pading">   
                                     <h3 class="team__developers">Игорь Демьяненко</h3>
                                     <p class="team__subtitle" lang="en">Product Designer</p>
@@ -214,9 +300,14 @@
                                 </div>    
                             </li>
                             <li class="team-list__item">
-                                <img src="./img/img.studio/frontenddeveloper.jpeg" 
+                                <img srcset="./img/@/olga-2x.jpeg  540w, 
+                                             ./img/@/olga-3x.jpeg  810w,
+                                             ./img/@/olga-4x.jpeg 1080w"
+                                     src="./img/img.studio/frontenddeveloper.jpeg" 
                                      alt="фронтенд разработчик" 
-                                     width="270">
+                                     sizes="(min-width: 1200px) 20vw,
+                                            (min-width: 768px) 50vw,
+                                            (min-width: 320px) 100vw, 100vw">
                                 <div class="team__subtitle--pading">
                                     <h3 class="team__developers">Ольга Репина</h3>
                                     <p class="team__subtitle">Frontend Developer</p>
@@ -257,7 +348,14 @@
                                 </div>
                             </li>
                             <li class="team-list__item">
-                                <img src="./img/img.studio/marketing.jpeg" alt="маркетинг" width="270">
+                                <img srcset="./img/@/nik-X2.jpeg  540w,
+                                             ./img/@/nik-X3.jpeg  810w,
+                                             ./img/@/nik-X4.jpeg 1080w"
+                                     src="./img/img.studio/marketing.jpeg" 
+                                     alt="маркетинг" 
+                                     sizes="(min-width: 1200px) 20vw,
+                                            (min-width: 768px) 50vw,
+                                            (min-width: 320px) 100vw, 100vw">>
                                 <div class="team__subtitle--pading">
                                     <h3 class="team__developers">Николай Тарасов</h3>
                                     <p class="team__subtitle">Marketing</p>
@@ -298,7 +396,14 @@
                                 </div>
                             </li>
                             <li class="team-list__item">
-                                <img src="./img/img.studio/uidesigner.jpeg" alt="ю ай дизайнер" width="270">
+                                <img srcset="./img/@/miha-x2.jpeg  540w,
+                                             ./img/@/miha-x3.jpeg  810w,
+                                             ./img/@/miha-x4.jpeg 1080w,"
+                                     src="./img/img.studio/uidesigner.jpeg" 
+                                     alt="ю ай дизайнер" 
+                                     sizes="(min-width: 1200px) 20vw,
+                                            (min-width: 768px) 50vw,
+                                            (min-width: 320px) 100vw, 100vw">
                                 <div class="team__subtitle--pading">
                                     <h3 class="team__developers">Михаил Ермаков</h3>
                                     <p class="team__subtitle">UI Designer</p>
@@ -343,11 +448,11 @@
             </section>
             <!--  наши клиенты -->
             <section class="clients">
-                <div class="container">
+                <div class="cont">
                     <h2 class="headline">Постоянные клиенты</h2>
                         <ul class="clients-list">
                             <li class="clients-list__item">
-                                <a> 
+                                <a class="clients-list__border"> 
                                     <svg width="41"
                                          height="47">
                                         <use 
@@ -357,7 +462,7 @@
                                 </a>
                             </li>
                             <li class="clients-list__item">
-                                <a>
+                                <a class="clients-list__border">
                                     <svg width="40"
                                          height="52">
                                         <use href="./img/svg/1 symbol-defs.svg#icon-group-2">
@@ -463,13 +568,13 @@
                         </div>
                         <div class="footer-form">
                             <p class="footer-discription">Подпишитесь на рассылку</p>
-                            <form>
-                                <label for="email"></label>
-                                <input type="email"
+                            <form class="footer-form__form">
+                                <label class="footer-form__label" for="email"></label>
+                                <input class="footer-form__input" type="email"
                                        name="email"
                                        id="email"
                                        placeholder="E-mail">
-                                <button type="submit">Подписаться
+                                <button class="footer-form__button" type="submit">Подписаться
                                     <svg class="footer-form__icon">
                                         <use href="./img/svg/1 symbol-defs.svg#icon-telegram"></use>
                                     </svg>
@@ -556,5 +661,11 @@
                 });
             })();
     </script>
-    </body>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+</body>
 </html>
